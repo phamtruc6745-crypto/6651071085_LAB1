@@ -1,0 +1,362 @@
+[
+  {
+    "id": "task-001",
+    "title": {
+      "vi": "Thiết kế giao diện bảng Kanban",
+      "en": "Design the Kanban board layout"
+    },
+    "description": {
+      "vi": "Vẽ wireframe cho ba cột Cần làm, Đang làm, Hoàn thành và quy định màu emerald dùng thống nhất trên toàn trang.",
+      "en": "Sketch wireframes for the To do, In progress and Done columns and define the emerald colors used across the site."
+    },
+    "status": "done",
+    "priority": "high",
+    "estimateHours": 6,
+    "assignee": "Nguyễn Minh Anh",
+    "dueDate": "2026-11-05",
+    "labels": [ "design", "frontend" ],
+    "createdAt": "2026-10-28"
+  },
+  {
+    "id": "task-002",
+    "title": {
+      "vi": "Cài đặt dự án Vite và Tailwind",
+      "en": "Set up the Vite and Tailwind project"
+    },
+    "description": {
+      "vi": "Khởi tạo dự án React 18 với TypeScript, cấu hình Tailwind v3, ESLint và Vitest theo đúng phiên bản yêu cầu.",
+      "en": "Initialize a React 18 TypeScript project and configure Tailwind v3, ESLint and Vitest with the required versions."
+    },
+    "status": "done",
+    "priority": "medium",
+    "estimateHours": 3,
+    "assignee": "Trần Quốc Bảo",
+    "dueDate": "2026-11-04",
+    "labels": [ "devops", "frontend" ],
+    "createdAt": "2026-10-29"
+  },
+  {
+    "id": "task-003",
+    "title": {
+      "vi": "Xây dựng chức năng thêm và sửa công việc",
+      "en": "Build the add and edit task forms"
+    },
+    "description": {
+      "vi": "Tạo biểu mẫu có kiểm tra dữ liệu cho tiêu đề, người phụ trách, hạn chót và ước lượng giờ, hiển thị trong hộp thoại.",
+      "en": "Create a validated form for title, assignee, due date and estimated hours, displayed inside a dialog."
+    },
+    "status": "doing",
+    "priority": "high",
+    "estimateHours": 8,
+    "assignee": "Lê Thu Hà",
+    "dueDate": "2026-11-10",
+    "labels": [ "frontend" ],
+    "createdAt": "2026-10-30"
+  },
+  {
+    "id": "task-004",
+    "title": {
+      "vi": "Lưu dữ liệu công việc vào localStorage",
+      "en": "Persist tasks in localStorage"
+    },
+    "description": {
+      "vi": "Đọc dữ liệu mẫu lần đầu, sau đó đồng bộ mọi thay đổi và xử lý trường hợp dữ liệu lưu bị hỏng.",
+      "en": "Load the sample data on first visit, then sync every change and handle corrupted stored data safely."
+    },
+    "status": "doing",
+    "priority": "medium",
+    "estimateHours": 4,
+    "assignee": "Phạm Gia Huy",
+    "dueDate": "2026-11-12",
+    "labels": [ "frontend", "backend" ],
+    "createdAt": "2026-10-31"
+  },
+  {
+    "id": "task-005",
+    "title": {
+      "vi": "Sửa lỗi mất focus khi đóng hộp thoại",
+      "en": "Fix lost focus when closing the dialog"
+    },
+    "description": {
+      "vi": "Sau khi đóng hộp thoại, tiêu điểm bàn phím phải quay lại đúng nút đã mở để người dùng bàn phím không bị lạc.",
+      "en": "After the dialog closes, keyboard focus must return to the button that opened it so keyboard users do not get lost."
+    },
+    "status": "todo",
+    "priority": "high",
+    "estimateHours": 2,
+    "assignee": "Nguyễn Minh Anh",
+    "dueDate": "2026-11-14",
+    "labels": [ "bug", "frontend" ],
+    "createdAt": "2026-11-01"
+  },
+  {
+    "id": "task-006",
+    "title": {
+      "vi": "Viết kiểm thử cho các hàm tiện ích",
+      "en": "Write unit tests for the utility functions"
+    },
+    "description": {
+      "vi": "Dùng Vitest kiểm tra định dạng tiền, cắt chuỗi, kiểm tra email và hàm debounce với đồng hồ giả.",
+      "en": "Use Vitest to cover currency formatting, text truncation, email validation and debounce with fake timers."
+    },
+    "status": "todo",
+    "priority": "medium",
+    "estimateHours": 3,
+    "assignee": "Trần Quốc Bảo",
+    "dueDate": "2026-11-16",
+    "labels": [ "testing" ],
+    "createdAt": "2026-11-01"
+  },
+  {
+    "id": "task-007",
+    "title": {
+      "vi": "Viết tài liệu hướng dẫn chạy dự án",
+      "en": "Write the project setup guide"
+    },
+    "description": {
+      "vi": "Soạn README ngắn gọn nêu các lệnh cài đặt, chạy thử, kiểm tra lint và triển khai lên Vercel.",
+      "en": "Draft a short README covering install, dev server, lint commands and deployment to Vercel."
+    },
+    "status": "todo",
+    "priority": "low",
+    "estimateHours": 2,
+    "assignee": "Lê Thu Hà",
+    "dueDate": "2026-11-20",
+    "labels": [ "docs" ],
+    "createdAt": "2026-11-02"
+  },
+  {
+    "id": "task-008",
+    "title": {
+      "vi": "Cấu hình triển khai và chuyển hướng SPA",
+      "en": "Configure deployment and SPA redirects"
+    },
+    "description": {
+      "vi": "Thêm vercel.json và tệp _redirects để đường dẫn chi tiết công việc không bị lỗi 404 khi tải lại trang.",
+      "en": "Add vercel.json and a _redirects file so task detail URLs do not return 404 after a page reload."
+    },
+    "status": "todo",
+    "priority": "low",
+    "estimateHours": 1.5,
+    "assignee": "Phạm Gia Huy",
+    "dueDate": "2026-11-22",
+    "labels": [ "devops" ],
+    "createdAt": "2026-11-02"
+  },
+  {
+    "id": "task-009",
+    "title": {
+      "vi": "Tích hợp chuyển đổi ngôn ngữ VI/EN",
+      "en": "Integrate VI/EN language switcher"
+    },
+    "description": {
+      "vi": "Xây dựng Context quản lý ngôn ngữ toàn cục, hỗ trợ đổi ngôn ngữ tức thì không cần tải lại trang.",
+      "en": "Build a global language Context supporting instant language toggle without page refresh."
+    },
+    "status": "done",
+    "priority": "high",
+    "estimateHours": 5,
+    "assignee": "Phạm Thanh Trúc",
+    "dueDate": "2026-11-08",
+    "labels": [ "frontend", "design" ],
+    "createdAt": "2026-11-01"
+  },
+  {
+    "id": "task-010",
+    "title": {
+      "vi": "Phát triển tính năng so sánh công việc",
+      "en": "Develop task comparison feature"
+    },
+    "description": {
+      "vi": "Cho phép chọn tối thiểu 2 công việc để đối chiếu độ ưu tiên, thời gian dự kiến và người đảm nhận.",
+      "en": "Allow selecting at least 2 tasks to compare priority, estimated hours, and assignees."
+    },
+    "status": "doing",
+    "priority": "high",
+    "estimateHours": 6,
+    "assignee": "Phạm Thanh Trúc",
+    "dueDate": "2026-11-11",
+    "labels": [ "frontend", "backend" ],
+    "createdAt": "2026-11-02"
+  },
+  {
+    "id": "task-011",
+    "title": {
+      "vi": "Tạo giao diện Skeleton Loading",
+      "en": "Create Skeleton Loading UI"
+    },
+    "description": {
+      "vi": "Tạo hiệu ứng khung xương tải giả lập cho các thẻ công việc trong lúc ứng dụng đồng bộ dữ liệu.",
+      "en": "Create skeleton placeholder cards while application syncs or loads data."
+    },
+    "status": "done",
+    "priority": "medium",
+    "estimateHours": 3,
+    "assignee": "Nguyễn Minh Anh",
+    "dueDate": "2026-11-06",
+    "labels": [ "design", "frontend" ],
+    "createdAt": "2026-11-02"
+  },
+  {
+    "id": "task-012",
+    "title": {
+      "vi": "Tối ưu hóa khả năng truy cập (Accessibility)",
+      "en": "Optimize Accessibility (a11y)"
+    },
+    "description": {
+      "vi": "Bổ sung đầy đủ thẻ alt cho ảnh, aria-label cho nút bấm icon và kiểm tra độ tương phản màu chữ.",
+      "en": "Add alt tags for images, aria-label for icon buttons, and verify text contrast standards."
+    },
+    "status": "todo",
+    "priority": "high",
+    "estimateHours": 4,
+    "assignee": "Trần Quốc Bảo",
+    "dueDate": "2026-11-15",
+    "labels": [ "frontend", "bug" ],
+    "createdAt": "2026-11-03"
+  },
+  {
+    "id": "task-013",
+    "title": {
+      "vi": "Cấu hình ESLint và bổ sung Rule kiểm tra",
+      "en": "Configure ESLint and add custom rules"
+    },
+    "description": {
+      "vi": "Cấu hình tệp eslint.config.js chuẩn Vite kết hợp 2 quy tắc bắt buộc để đảm bảo không có cảnh báo.",
+      "en": "Configure Vite eslint.config.js with 2 required rules to ensure zero warnings or errors."
+    },
+    "status": "done",
+    "priority": "medium",
+    "estimateHours": 2,
+    "assignee": "Lê Thu Hà",
+    "dueDate": "2026-11-03",
+    "labels": [ "devops", "testing" ],
+    "createdAt": "2026-11-01"
+  },
+  {
+    "id": "task-014",
+    "title": {
+      "vi": "Thiết kế Responsive trên Mobile và Tablet",
+      "en": "Design Responsive layout for Mobile & Tablet"
+    },
+    "description": {
+      "vi": "Cấu hình breakpoint Tailwind để hiển thị 1 cột ở Mobile, 2 cột ở Tablet và 3-4 cột ở Desktop.",
+      "en": "Configure Tailwind breakpoints for 1 column on Mobile, 2 on Tablet, and 3-4 on Desktop."
+    },
+    "status": "doing",
+    "priority": "high",
+    "estimateHours": 5,
+    "assignee": "Phạm Gia Huy",
+    "dueDate": "2026-11-09",
+    "labels": [ "frontend", "design" ],
+    "createdAt": "2026-11-02"
+  },
+  {
+    "id": "task-015",
+    "title": {
+      "vi": "Kiểm tra chất lượng bằng Lighthouse Mobile",
+      "en": "Audit quality with Lighthouse Mobile"
+    },
+    "description": {
+      "vi": "Đo đạc chỉ số Performance >= 70, Accessibility >= 90 và Best Practices >= 90 trên giao diện di động.",
+      "en": "Measure metrics to ensure Performance >= 70, Accessibility >= 90 and Best Practices >= 90 on mobile."
+    },
+    "status": "todo",
+    "priority": "medium",
+    "estimateHours": 3,
+    "assignee": "Phạm Thanh Trúc",
+    "dueDate": "2026-11-18",
+    "labels": [ "testing", "frontend" ],
+    "createdAt": "2026-11-03"
+  },
+  {
+    "id": "task-016",
+    "title": {
+      "vi": "Xây dựng trang Chi tiết công việc",
+      "en": "Build Task Detail Page"
+    },
+    "description": {
+      "vi": "Tạo route /item/:id hiển thị toàn bộ thông số chi tiết, lịch sử chỉnh sửa và liên kết quay lại.",
+      "en": "Create /item/:id route displaying full task parameters, revision history, and back link."
+    },
+    "status": "done",
+    "priority": "high",
+    "estimateHours": 4,
+    "assignee": "Nguyễn Minh Anh",
+    "dueDate": "2026-11-07",
+    "labels": [ "frontend", "backend" ],
+    "createdAt": "2026-11-01"
+  },
+  {
+    "id": "task-017",
+    "title": {
+      "vi": "Thêm hiệu ứng thông báo Toast",
+      "en": "Add Toast notification component"
+    },
+    "description": {
+      "vi": "Hiển thị thông báo phản hồi nhanh khi người dùng thực hiện tạo, cập nhật hoặc xóa thẻ thành công.",
+      "en": "Display quick feedback notifications when users create, update, or delete cards successfully."
+    },
+    "status": "todo",
+    "priority": "low",
+    "estimateHours": 2.5,
+    "assignee": "Trần Quốc Bảo",
+    "dueDate": "2026-11-17",
+    "labels": [ "frontend", "design" ],
+    "createdAt": "2026-11-03"
+  },
+  {
+    "id": "task-018",
+    "title": {
+      "vi": "Xử lý lọc công việc theo từ khóa và nhãn",
+      "en": "Implement task filtering by keyword & label"
+    },
+    "description": {
+      "vi": "Viết hàm lọc danh sách công việc tức thì dựa trên ô nhập tìm kiếm và danh sách nhãn phân loại.",
+      "en": "Write filtering logic to search tasks instantly based on search input and taxonomy labels."
+    },
+    "status": "doing",
+    "priority": "medium",
+    "estimateHours": 3.5,
+    "assignee": "Lê Thu Hà",
+    "dueDate": "2026-11-13",
+    "labels": [ "frontend", "backend" ],
+    "createdAt": "2026-11-02"
+  },
+  {
+    "id": "task-019",
+    "title": {
+      "vi": "Triển khai ứng dụng lên hosting Vercel",
+      "en": "Deploy application to Vercel hosting"
+    },
+    "description": {
+      "vi": "Kết nối repository GitHub với Vercel, cấu hình biến môi trường và lấy đường dẫn trang web công khai.",
+      "en": "Connect GitHub repository to Vercel, set up environment variables, and get public web URL."
+    },
+    "status": "todo",
+    "priority": "high",
+    "estimateHours": 2,
+    "assignee": "Phạm Gia Huy",
+    "dueDate": "2026-11-21",
+    "labels": [ "devops" ],
+    "createdAt": "2026-11-03"
+  },
+  {
+    "id": "task-020",
+    "title": {
+      "vi": "Quay video demo sản phẩm và tổng hợp PDF",
+      "en": "Record video demo and assemble submission PDF"
+    },
+    "description": {
+      "vi": "Quay clip ngắn dưới 3 phút trình diễn 3 tính năng bắt buộc và đóng gói báo cáo PDF nộp LMS.",
+      "en": "Record a under 3-minute video demoing 3 required features and assemble PDF for LMS submission."
+    },
+    "status": "todo",
+    "priority": "medium",
+    "estimateHours": 4,
+    "assignee": "Phạm Thanh Trúc",
+    "dueDate": "2026-11-23",
+    "labels": [ "docs", "testing" ],
+    "createdAt": "2026-11-03"
+  }
+]
